@@ -1,0 +1,337 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle Steven K. Tjoa}
+\cfoot{\datestyle \thepage}
+\rfoot{\datestyle July 2013}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \rmfamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor} \footnotesize \rmfamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \rmfamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{Journal Publications,Conference Publications}
+
+
+\begin{document}
+
+% Print title.
+\begin{center}
+\namestyle Steven K. Tjoa \\[0.3em]
+\addressstyle 1907 Lincoln Way, San Francisco, CA 94122 USA \ $\cdot$ Phone: 1-301-787-3693\\
+Email: kiemyang@gmail.com \ $\cdot$ Web: \url{http://stevetjoa.com}
+\end{center}
+
+\small
+
+\section*{Education}
+
+\subparagraph{Ph. D., Electrical Engineering}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 1/2007--5/2011
+\begin{itemize}
+	\item Advisor: K. J. Ray Liu (President, IEEE Signal Processing Society; IEEE Fellow; AAAS Fellow).
+	\item Dissertation: ``Sparse and Nonnegative Factorizations for Music Understanding''
+\end{itemize}
+
+\subparagraph{M. S., Electrical Engineering}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 8/2004--12/2006
+\begin{itemize}
+	\item Scholarly Paper: ``Digital Image Source Coder Identification: A Non-Intrusive Forensic Methodology''
+\end{itemize}
+
+\subparagraph{B. S., Computer Engineering}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 8/2000--5/2004
+\begin{itemize}
+	\item University Honors Program.  Citation in Music Performance.  UM Symphony Orchestra.
+\end{itemize}
+
+
+\section*{Honors and Awards}
+
+\begin{itemize}
+\item NSF/ASEE Small Business Postdoctoral Research Fellowship, 2011
+\item Quality Reviewer, IEEE Int. Conf. Multimedia Expo (ICME), 2011
+\item UMD Distinguished Teaching Assistant, 2007, 2011
+\item ECEGSA Best Student Speaker, 2010 (awarded to two ECE graduate students)
+\item ECE TA Training and Development Fellow, 2010
+\item ECE Graduate Student Service Award, 2008 (awarded to one ECE graduate student)
+\item UMD Graduate Student Summer Research Fellowship, 2008 (awarded to fifty-six UMD graduate students)
+\item Lilly Conference Travel Grant, 2008
+\item UMD Future Faculty Fellow, 2008 (awarded to twenty UMD engineering graduate students)
+\item ECE George Corcoran Memorial Award, 2007 (awarded to one ECE graduate student)
+\item UMD Dept. of Resident Life Community Assistant of the Year, 2002
+\item UMD Presidential Scholarship, 2000
+\item ECE Departmental Scholarship, 2000
+\item Edward J. Bloustein Distinguished Scholar, New Jersey, 2000
+\item New Jersey Governor's School of the Arts, 1999
+\item MENC All-Eastern Orchestra, Carnegie Hall, New York, 1999
+\end{itemize}
+
+\section*{Industry Experience}
+
+\subparagraph{Postdoctoral Research Engineer}
+iZotope, Inc. $\cdot$ San Francisco, CA $\cdot$ 3/2012--6/2013 
+
+Imagine Research, Inc. (acquired by iZotope, Inc.) $\cdot$ San Francisco, CA $\cdot$ 6/2011--3/2012
+\begin{itemize}
+    \item Received a two-year \textit{Small Business Postdoctoral Research Fellowship} from the U. S. National Science Foundation (NSF).
+    \item Implemented algorithms to improve the MediaMined sound classifier and search engine. Examples include support vector machines, linear discriminant analysis, principal component analysis, nonnegative matrix factorization, and k-means clustering.
+    \item Prepared MediaMined for widespread commercial use over the Internet. Used Amazon Web Services (EC2, S3, SNS) for automation and scalability.
+    \item Implemented evaluations and visualizations to verify the quality of MediaMined's search results.
+    \item Wrote \texttt{mediamined}, an internal Python package. Subpackages include tools for rhythmic analysis (\texttt{rhythm}), timbral analysis (\texttt{timbre}), database communication (\texttt{database}), web communication (\texttt{web}), transfers to/from Amazon S3 (\texttt{s3}), audio collection management (\texttt{collection}), unit tests (\texttt{test}), signal processing (\texttt{signal}), and machine learning (\texttt{ml}). Compliant with Sphinx for automatic HTML and PDF documentation.
+    \item Wrote two automated test suites for XML validation and large-scale response-time testing.
+    \item Wrote an internal dashboard for iZotope employees that displays the usage statistics of MediaMined per user and per audio collection.
+    \item Wrote programs in Python (NumPy, SciPy, Matplotlib, audiolab, boto, distutils, MySQLdb, ElementTree, Multi-Mechanize, sphinx), SQL, PHP, and Octave.
+    \item Used project management tools such as Git, Subversion, Jira, Confluence, SourceRepo, and GoToMeeting.
+    \item Served as a liaison between the industry and academic communities by reaching out to students and faculty for potential partnerships and by educating members of industry about the latest technological advances.
+    \item Gave two internal technical presentations.
+\end{itemize}
+
+
+\section*{Research Experience}
+
+\subparagraph{Research Assistant, Dept. of ECE}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 6/2005--5/2011
+\begin{itemize}
+\item Developed sparse and nonnegative factorization methods for music information retrieval (MIR) tasks such as transcription, instrument recognition, and more.
+\item Developed forensic methods to detect and classify traces of compression in digital images based solely upon information intrinsic to the image such as artifacts caused by pre-processing, transformation, and quantization.
+\item Received a \textit{Graduate Student Summer Research Fellowship} from the Graduate School for 2008.
+\end{itemize}
+
+\subparagraph{Research Assistant, Dept. of ECE}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 1/2003--8/2003
+\begin{itemize}
+\item Implemented an indoor location system using a four-antenna array for synchronous data collection following the IEEE 802.11b standard. Wrote programs in VHDL, C, and Matlab.
+\end{itemize}
+
+
+% Publications.
+\bibliographystylej{IEEEtran}
+\bibliographystylec{IEEEtran}
+
+\nocitej{lin-TIFS2009}
+\nocitec{tjoa-ICASSP2007}
+\nocitec{lin-ICME2007}
+\nocitec{tjoa-ICIP2007}
+\nocitec{tjoa-ICASSP2010-mult}
+\nocitec{tjoa-ICASSP2010-harm}
+\nocitec{stamm-ICASSP2010}
+\nocitec{tjoa-ISMIR2010}
+\nocitec{stamm-ICIP2010}
+\nocitec{keegan2011waspaa}
+\nocitec{tjoa2011ismir}
+
+\bibliographyj{tjoa}
+\bibliographyc{tjoa}
+
+
+\section*{Service and Leadership Activities}
+\subparagraph{Member} IEEE, IEEE Signal Processing Society, ACM
+\subparagraph{Committee Member} International conferences and workshops.
+\begin{itemize}
+\item \textbf{Organizing Committee} ACM MIRUM 2012, Stanford CCRMA MIR Workshop (2011--2013)
+\item \textbf{Program Committee} ACM Multimedia 2013, AdMIRe 2012
+\item \textbf{Technical Program Committee} IEEE WIAMIS 2013, IEEE ICME (2011, 2012)
+\end{itemize}
+
+\subparagraph{Reviewer} Eighteen journal and seventy-seven conference paper submissions. 
+\begin{itemize}
+\item \textbf{Journals} \ 
+    IEEE Trans. Image Processing, % 1 paper
+    Springer Int. J. Multimedia Information Retrieval, % 1 paper
+    IEEE Trans. Information Forensics and Security, % 7 papers
+    IEEE J. Selected Topics in Signal Processing, % 3 papers
+    IEEE Signal Processing Letters, % 4 papers
+    SPIE J. Electronic Imaging, % 1 paper
+    Elsevier J. Visual Comm. and Image Representation. % 1 paper
+\item \textbf{Conferences} \ 
+    ISMIR (2011, 2012, 2013), % 4+3+2 papers
+    IEEE WASPAA 2013, % 1 paper
+    IEEE MMSP (2012, 2013), % 3+3 papers
+    ACM Multimedia 2013, % 1 paper
+    IEEE WIAMIS 2013, % 3 papers
+    IEEE ICASSP (2008, 2012, 2013), % 2 + 2 + 3 papers
+    ACM MIRUM 2012, % 8 papers
+    AdMIRe 2012, % 3 papers
+    IEEE ICME (2011, 2012), % 15 + 7 papers
+    Dagstuhl Seminar on Multimodal Music Processing 2011, % 1 paper
+    IEEE ISCAS 2012, % 3 papers
+    AES 42, % 1 paper
+    IEEE ICIP (2008, 2010), % 5 + 5 papers
+    IEEE ICCCAS 2006. % 2 papers
+\item \textit{Quality Reviewer}, ICME 2011
+\end{itemize}
+
+\subparagraph{Conference Volunteer}
+Various international conferences
+\begin{itemize}
+\item Helped grade the MIREX contests at ISMIR 2010 and 2011.
+\item Performed administrative tasks at IEEE ICASSP 2007 and ISMIR 2008.
+\end{itemize}
+
+\subparagraph{Coordinator, Entrepreneurial Activities}
+U. of Maryland $\cdot$ College Park, MD $\cdot$ 9/2009--5/2011
+\begin{itemize}
+\item Helped organize colloquia and social events related to entrepreneurship.
+\end{itemize}
+
+\subparagraph{Graduate Dean's Student Advisory Committee}
+U. of Maryland $\cdot$ College Park, MD $\cdot$ 1/2008--5/2011
+\begin{itemize}
+\item Advised the Graduate Dean on graduate-level academic issues at the University of Maryland including assistantship policy, mentoring, entrepreneurship, ethics, career placement, inter-departmental collaboration, awards and recognition, revision of the UMD Strategic Plan, facility renovations, and more.
+\item Was invited for membership by nomination.
+\end{itemize}
+
+\subparagraph{President, ECEGSA}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 7/2007--6/2008
+\begin{itemize}
+\item Led the Electrical and Computer Engineering Graduate Student Association (ECEGSA), an organization that serves the 400-person ECE graduate student body through social, academic, and professional activities.  Served as the primary interface between the graduate students and faculty, staff, industry, and professional organizations.  Managed a board of nine graduate students. 
+\item Organized and moderated weekly research seminars, panel discussions, and award ceremonies.  Organized such social events as hiking, skiing, barbecues, weekly coffee hours, and more.
+\item Received the \textit{Graduate Student Service Award} from the Department of Electrical and Computer Engineering for the 2007-2008 academic year.
+\end{itemize}
+
+\subparagraph{Lab Manager}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 6/2007--5/2011
+\begin{itemize}
+	\item Handled everyday concerns related to the Multimedia Signal Processing Laboratory, including computer maintenance, item inventory, and lab organization. Created and maintained the Signals and Information Group web site.
+\end{itemize}
+
+\subparagraph{Volunteer, Laboratory Demonstrations}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 4/2006--4/2011
+\begin{itemize}
+    \item Gave public demonstrations in the Multimedia Signal Processing Laboratory, including Maryland Day 2006-2011 and many others. Assisted with hands-on demonstrations.
+\end{itemize}
+
+\subparagraph{Community Assistant, Dept. of Resident Life}
+Univ. of Maryland $\cdot$ College Park, MD $\cdot$ 8/2001--8/2002
+\begin{itemize}
+\item Provided customer service to students, parents, staff, and faculty within the UMD community. Maintained security of keys and packages within North Hill resident halls.
+\item Received an award for \textit{Community Assistant of the Year} for the 2001-2002 academic year.
+\end{itemize}
+
+
+\section*{Invited Talks}
+
+\begin{itemize}
+\item Two lecture and five poster presentations at international conferences. % lecture: ICASSP 2007, ICIP 2007; poster: ICASSP 2010 (2), ISMIR 2010, ISMIR 2011, WASPAA 2011
+\item ``Music Information Retrieval in Polyphonic Mixtures,'' Stanford University, CA, June 29, 2011; June 27, 2012; and June 27, 2013. Center for Computer Research in Music and Acoustics (CCRMA) Workshop on MIR.
+\item ``My First Four Months at a Tech Startup,'' University of Maryland, College Park, MD, October 21, 2011. ECEGSA seminar.
+\item ``\LaTeX\ From Scratch,'' University of Maryland, College Park, MD, February 8, 2011. Workshop for ECE students. Wrote \href{http://stevetjoa.com/540}{\LaTeX\ At A Glance} for participants.
+\item ``Make It Stick: Get Students to Remember Your Message,'' University of Maryland, College Park, MD, October 27, 2010. Workshop for graduate ECE teaching assistants. \textit{Selected feedback}: ``I like Steve's workshops, he's good.'' ``Very helpful.'' ``Really useful and interesting.'' ``Informative and very easy to listen to.'' ``That's what every TA needs to know.''
+\item ``Factorizing Bach: Recent Convergences Between Music and Machines,'' University of Maryland, College Park, MD, February 19, 2010. ECEGSA seminar on music information retrieval. Received an \textit{ECEGSA Best Student Speaker Award} for 2009-10.
+\item ``Public Speaking: Conquering your fears through practice,'' University of Maryland, College Park, MD, March 5, 2009. Workshop for graduate ECE teaching assistants.
+\item ``Time Management for Teaching Assistants: There is Not Enough Time in the Day,'' University of Maryland, College Park, MD, October 16, 2008 and March 8, 2010. Workshop for graduate ECE teaching assistants.
+\end{itemize}
+
+\section*{Teaching Experience}
+
+\subparagraph{Co-instructor, MIR Workshop} CCRMA, Stanford University $\cdot$ Stanford, CA $\cdot$ 2011--2013
+\begin{itemize}
+\item Helped teach and administer the annual summer workshop on music information retrieval.  Presented lectures and designed laboratory exercises on machine learning, pitch detection, chord detection, music transcription, source separation, and deep belief networks. Recruited guest lecturers.
+\end{itemize}
+
+\subparagraph{Lecturer} University of Maryland $\cdot$ College Park, MD $\cdot$ Fall 2009
+\begin{itemize}
+\item \textbf{Selected Student Feedback}  ``The techniques used by Steve work very well for me.'' ``really great balance between theory and examples.'' ``good balance between theory and examples.'' ``extremely well-taught course.'' ``seemed genuinely interested in helping students.'' ``very approachable!'' ``has motivated me to branch into DSP.'' ``has been my best class this semester.'' ``Awesome class!!! my favorite this semester.''
+\item \textbf{ENEE322: Signal and System Theory} Taught forty-eight students over 33\% of the Fall 2009 semester. Designed lesson plans, homework assignments, and exams. Mentored two teaching assistants. Held regular office hours and review sessions. Graded exams.
+\end{itemize}
+
+\subparagraph{Teaching Assistant}
+University of Maryland $\cdot$ College Park, MD $\cdot$ 8/2005--5/2011
+\begin{itemize}
+\item \textbf{Selected Student Feedback}  ``Steve Tjoa - Best TA in the university.'' ``Steve was the best TA that I have ever had at UMD. Always had an answer to any question asked and used discussion time effectively.'' ``The TA Steve Tjoa, was the best TA I have ever had at Maryland'' ``he is absolutely the best TA I've ever had. His way of explaining things is really amazing.'' ``Best TA I've had in EE. Knows material well, explains concepts well.'' ``by far the best TA I ever had at UMD.''  ``great understanding of the subject.'' ``very friendly and approachable.'' ``offers insight and suggestions.'' ``always full of energy.''  ``enthusiastic.'' ``well organized, conveyed concepts clearly.'' ``understands student's needs and difficulties.'' ``fair and sincere.'' ``communicates well.'' ``one of the most dedicated TAs I've had.'' ``one of the most helpful TAs I've come across.'' ``extremely helpful at all times and motivates you to do good work in lab.'' ``holds additional office hours and is very fair at grading reports.'' ``I hope you win the best TA award.''
+\item \textbf{ENEE324H: Engineering Probability Honors}  Taught one section (eighteen students). Held regular office hours. Graded homework assignments.
+\item \textbf{ENEE408G: Multimedia Signal Processing} Taught over five semesters (fifty-seven students total). Administered four design projects per semester. Assisted with final semester projects, providing directions for research. Coauthored various assignments and programming guides. Held regular office hours and graded lab reports. Mentored four additional groups (twenty students total) in Spring 2010 on final semester projects related to music information retrieval.
+\item \textbf{ENEE241: Numerical Techniques in Engineering} Taught over two semesters (thirty-seven students total). Held regular office hours. Helped design exams. Graded homework assignments and exams.
+\item \textbf{ENEE428: Communications Design Laboratory} Taught one section (four students). Graded lab reports for two sections (sixteen students). Assisted students with DSP programming of the TI TMS320C6701. Administered lab assignments. Held office hours.
+\item \textbf{Awards} Received the \textit{George Corcoran Memorial Award} from the Department of Electrical and Computer Engineering for the 2006-2007 academic year.  Received two \textit{Distinguished Teaching Assistant Awards} from the Center for Teaching Excellence.  Received a travel grant to the \textit{Lilly-East Conference on College and University Teaching}.
+\end{itemize}
+
+\subparagraph{Honors 100 Section Leader}
+University of Maryland $\cdot$ College Park, MD $\cdot$ Fall 2002
+\begin{itemize}
+	\item Taught a weekly honors seminar (fourteen students), HONR100, as part of the University Honors Program. Introduced college freshmen to the qualities of a liberal education (e.g., diversity, current events, community service, arts), and helped them facilitate the transition from high school to college (e.g., academic planning, campus resources).
+\end{itemize}
+
+
+\section*{Computer Skills}
+
+\begin{itemize}
+\item \textbf{Languages} \ Python, C, Matlab/Octave, Java, Perl, PHP, HTML/XML
+\item \textbf{Version Control} \ Mercurial, Bitbucket, Git, Github, SVN, SourceRepo
+\item \textbf{OSs, Servers, Databases} \ Unix/Linux, Mac OS X, Windows, Apache, Cherokee, MySQL, SQLite, 
+\item \textbf{Web Hosting} Amazon Web Services EC2/S3, Linode, Slicehost
+\item \textbf{Hardware} \ TI TMS320C6701 EVM
+\end{itemize}
+
+\section*{Graduate Coursework}
+
+\begin{itemize}
+
+\item \textbf{Signal Processing} \ Advanced Digital Signal Processing, Digital Image Processing, Space-Time Signal Processing (A+), Auditory Scene Analysis (A+)
+
+\item \textbf{Machine Learning} \ Statistical Pattern Recognition (A+), Pattern Recognition in Temporal Data
+
+\item \textbf{Communications} \ Random Processes, Information Theory, Estimation and Detection Theory, Random~Graphs
+
+\item \textbf{Optimization and Controls} \ System Theory, Optimal Control, Advanced Numerical Optimization, Convex Optimization (A+), Networked Control Systems, Foundations of Optimization
+
+\item \textbf{Computing} \ Numerical Analysis, Digital Computer Design, Real-Time Collision Detection
+
+\item \textbf{Miscellaneous} \ Future Faculty Program Seminar I/II/III, Teaching Practicum (A+), Technology Law (A+)
+
+\end{itemize}
+
+
+\section*{Internships}
+
+\subparagraph{Intern, Satellite Management Systems}
+Intelsat $\cdot$ Washington, DC $\cdot$ 6/2004--8/2004
+\begin{itemize}
+\item Performed software tests on telemetry and flight dynamic commanding for Loral Ground Network Systems integration. Assisted with maintenance of software documentation.
+\end{itemize}
+
+\subparagraph{Intern, Satellite Engineering}
+Intelsat $\cdot$ Washington, DC $\cdot$ 6/2002--11/2002
+\begin{itemize}
+\item Performed software and database testing for the IS-X satellite series. Revised acceptance test plans and software requirement specifications.
+\end{itemize}
+
+\section*{Miscellaneous}
+
+\begin{itemize}
+\item Born in New Jersey, USA. USA citizen.
+\item Studied violin under Ms. Ayako Hosoi (retired, New Jersey SO) and Dr. James Stern (U. Maryland).
+\item Violinist with the San Francisco Civic Symphony (9/2012--present).
+\end{itemize}
+
+
+\end{document}
