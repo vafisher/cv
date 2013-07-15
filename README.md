@@ -5,11 +5,17 @@ My curriculum vitae in LaTeX. See `cv.tex`.
 
 For PDF, see http://up.stevetjoa.com/cv.pdf. This PDF may not necessarily be up to date with `cv.tex`.
 
-CV header: ![CV header](http://up.stevetjoa.com/cv_header.png)
+CV header: 
 
-Page footer: ![page footer](http://up.stevetjoa.com/cv_footer.png)
+![CV header](http://up.stevetjoa.com/cv_header.png)
 
-Multiple bibliographies: ![multiple bibliographies](http://up.stevetjoa.com/cv_multibib.png)
+Page footer: 
+
+![page footer](http://up.stevetjoa.com/cv_footer.png)
+
+Multiple bibliographies: 
+
+![multiple bibliographies](http://up.stevetjoa.com/cv_multibib.png)
 
 To build the PDF and bibliographies from scratch, simply type `make` which executes the following commands:
 
