@@ -1,0 +1,9 @@
+---
+- name: restart nginx
+  service: name=nginx state=restarted 
+
+- name: restart sshd
+  service: name=ssh state=restarted 
+
+- name: restart memcached
+  service: name=memcached state=restarted 

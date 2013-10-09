@@ -1,0 +1,27 @@
+---
+- name: Create user steve.
+  user: name=steve comment="Steve Tjoa" groups=admin,sudo shell=/bin/bash
+
+- name: Remove insecure authorized key for vagrant.
+  file: path=/home/vagrant/.ssh/authorized_keys state=absent
+
+- name: Add authorized key for steve and vagrant.
+  authorized_key: user={{ item }} key="{{ lookup('file', '/vagrant/id_rsa.pub') }}"
+  with_items:
+      - steve
+      - vagrant
+
+- name: Remove steve's password.
+  command: passwd -d steve 
+
+- name: Remove vagrant password.
+  command: passwd -d vagrant 
+
+- name: Disallow root SSH access.
+  lineinfile: dest=/etc/ssh/sshd_config regexp="^PermitRootLogin" line="PermitRootLogin no"
+  notify: restart sshd
+
+- name: Disallow password authentication.
+  lineinfile: dest=/etc/ssh/sshd_config regexp="^PasswordAuthentication" line="PasswordAuthentication no"
+  notify: restart sshd
+

@@ -1,0 +1,20 @@
+---
+- hosts: all
+  connection: local
+
+  tasks:
+
+    - name: Install packages using apt.
+      apt: pkg={{ item }} state=latest
+      with_items:
+        - texlive-xetex
+        - texlive-bibtex-extra
+        - texlive-publishers
+     
+    - name: Install packages using pip.
+      pip: requirements=/vagrant/requirements.txt
+
+    - include: users.yml
+
+  handlers:
+    - include: handlers.yml
