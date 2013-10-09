@@ -10,7 +10,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = 'cv'
 
   config.ssh.forward_agent = true
-  # Uncomment the lines below after running Ansible.
+  # Uncomment the lines below after running Ansible playbook `setup.yml`.
+  # Of course, you will need to change these variables.
   # config.ssh.username = 'steve'
   # config.ssh.private_key_path = '/Users/steve/.ssh/id_rsa'
 
