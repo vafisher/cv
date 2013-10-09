@@ -1,3 +1,5 @@
+.vagrant
+id*.pub
 *.acn
 *.acr
 *.alg
@@ -22,6 +24,7 @@
 *.nav
 *.nlo
 *.out
+*.pdf
 *.pdfsync
 *.ps
 *.snm
