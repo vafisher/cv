@@ -29,8 +29,8 @@ LaTeX dependencies:
 
 *   `multibib` for multiple bibliographies
 
-Using a Virtual Environment
----------------------------
+Build and Upload Within a Virtual Environment
+---------------------------------------------
 
 This section requires [Vagrant](http://vagrantup.com), [VirtualBox](https://www.virtualbox.org), and [Ansible](http://ansibleworks.com).
 
@@ -51,13 +51,11 @@ To create and configure a new virtual machine:
     vagrant@cv:/vagrant$ sudo ansible-playbook -i ansible_hosts setup.yml
     vagrant@cv:/vagrant$ exit
 
+At this point, you will need to specify your `username` and `private_key_path` in `Vagrantfile`.
 
-To build and upload (requires AWS S3 keys to be in the environment) the PDF:
+To build and upload the PDF:
 
     steve@cv:/vagrant$ sudo make
     steve@cv:/vagrant$ sudo ansible-playbook -i ansible_hosts upload.yml
 
-This step requires the environment variables `AWS_ACCESS_KEY` and `AWS_SECRET_KEY`.
-
-To transfer AWS S3 keys, copy your key file into `cv/keys.sh`, `source keys.sh` in the guest machine, then delete `cv/keys.sh`.
-
+This step requires the variables `AWS_ACCESS_KEY` and `AWS_SECRET_KEY` in `upload.yml`.
