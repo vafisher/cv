@@ -7,6 +7,8 @@
     - name: Install packages using apt.
       apt: pkg={{ item }} state=latest
       with_items:
+        - make
+        - vim
         - texlive-xetex
         - texlive-bibtex-extra
         - texlive-publishers
