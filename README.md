@@ -25,6 +25,12 @@ To build the PDF and bibliographies from scratch, simply execute the following c
 	xelatex cv.tex
 	xelatex cv.tex
 
+To upload to Amazon S3 using `awscli`:
+
+    aws s3 cp cv.pdf s3://yourbucketnamehere/
+
+This step requires the environment variables `AWS_ACCESS_KEY` and `AWS_SECRET_KEY`.
+
 LaTeX dependencies:
 
 *   `multibib` for multiple bibliographies
