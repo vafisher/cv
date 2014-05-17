@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/stevetjoa/cv.png?label=ready&title=Ready)](https://waffle.io/stevetjoa/cv)
 cv
 ==
 
