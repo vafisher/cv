@@ -1,7 +1,7 @@
 cv
 ==
 
-*This CV is not maintained. Moving CV to HTML in [stevetjoa.com-views/cv](http://github.com/stevetjoa/stevetjoa.com-views).*
+*This CV is not maintained.*
 
 My curriculum vitae in LaTeX. See `cv.tex`.
 
@@ -36,6 +36,4 @@ This step requires the environment variables `AWS_ACCESS_KEY` and `AWS_SECRET_KE
 LaTeX dependencies:
 
 *   `multibib` for multiple bibliographies
-
-For more about me, please visit <http://stevetjoa.com>.
 
