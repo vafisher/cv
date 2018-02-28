@@ -1,4 +1,4 @@
-all: cv resume
+all: resume
 
 cv:
 	xelatex cv.tex
@@ -13,3 +13,6 @@ resume:
 	bibtex j.aux
 	xelatex resume.tex
 	xelatex resume.tex
+
+upload:
+	aws s3 cp resume.pdf s3://up.stevetjoa.com/ --profile personal
